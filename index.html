@@ -1086,7 +1086,13 @@ slideGroups.forEach(slider => {
 
     
 </style>
-     <h1 class="title">SAK-Transit © 2025</h1>
+     <h1 class="title">SAK-Transit © <span id="current-year"></span></h1>
+
+<script>
+  // Récupère l'année en cours et l'injecte dans la balise span
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+
             
         
     
